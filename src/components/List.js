@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import {View, Text} from 'react-native'
 
 const mapStateToProps = state =>{
-    return {articles:state.topic}
+    return {articles:state.articles}
 }
 
 const ConnectedList = ({articles}) => (

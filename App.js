@@ -10,6 +10,7 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import Form from './src/components/Form'
 import List from './src/components/List'
+import Posts from './src/components/Posts'
 
 export default class App extends Component {
   render() {
@@ -19,8 +20,15 @@ export default class App extends Component {
         <Text style={styles.list}>To get started, edit App.js</Text>
         <List />
         <View>
+          <Text>Add a new article</Text>
           <Form />
         </View>
+        
+        <View>
+          <Text>Api post</Text>
+          <Posts />
+        </View>
+        
       </View>
     );
   }
